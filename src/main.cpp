@@ -1,5 +1,5 @@
 /*
-Capture The Flag RFID Edition: created by Marco Vázquez Madero
+Capture The Flag RFID Edition: created by Marco Vázquez Madero 1
 
 Developed and tested for Arduino Nano ATmega328P (Both Old and New Bootloader)
 You can change this in platformio.ini settings, Just add new for the NewBootloader
@@ -35,10 +35,11 @@ Wiring diagram:
 //      Initial Setup
 //---------------------------------------------------------------------------------
 
+#include <Arduino.h>
 #include <SPI.h>
 #include <MFRC522.h>
 #include <Wire.h>
-//#include <Adafruit_I2CDevice.h>    // Include this library if it doesnt compile correctly
+#include <Adafruit_I2CDevice.h>    // Include this library if it doesnt compile correctly
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 

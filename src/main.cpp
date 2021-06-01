@@ -186,7 +186,7 @@ void Team2PointsDisplay(unsigned long TimetoDisplay)
 
   lcd2.setCursor(4, 0);
   lcd2.print("Equipo 2");
-}
+
 }
 
 //---------------------------------------------------------------------------------

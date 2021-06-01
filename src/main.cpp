@@ -82,10 +82,10 @@ bool Team1Flag = 0; //Boolean used to signal which team has the flag
 bool Team2Flag = 0;
 
 void CapturingBeep()
-{ //Beep when Team 1 captures the flag
-  digitalWrite(5, HIGH);
-  delay(1000);
-  digitalWrite(5, LOW);
+{ //Beep when Team 1 captures the flag 
+
+  tone(5, 2000, 500);       //Tone is for PASSIVE buzzers
+                            //Use digital Write for ACTIVE buzzers
 }
 
 void CheckUID()
@@ -196,7 +196,6 @@ void Team2PointsDisplay(unsigned long TimetoDisplay)
 void setup()
 {
 
-  pinMode(5, OUTPUT);
   Serial.begin(115200); // Initialize serial communications with the PC for debugging
   lcd1.init();          // Initialize lcds
   lcd2.init();
